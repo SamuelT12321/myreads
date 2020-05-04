@@ -11,3 +11,8 @@ below npm library is required to run the app:<br />
 3:npm install --save react-router-dom<br />
 4:run npm start<br />
 
+### `MyReads app pages`
+
+there are two pages in this app.<br /> 
+npm will start the app at http://localhost:3000/ as home page<br />
+for search book page `/search`<br />
