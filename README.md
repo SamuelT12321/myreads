@@ -16,3 +16,6 @@ below npm library is required to run the app:<br />
 there are two pages in this app.<br /> 
 npm will start the app at http://localhost:3000/ as home page<br />
 for search book page `/search`<br />
+
+### License
+myreads is Copyright ©2020 Samuel tam. terms specified in the <a href="https://github.com/SamuelT12321/myreads/blob/master/LICENSE.txt">LICENSE</a> file.
