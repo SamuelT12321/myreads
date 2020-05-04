@@ -5,9 +5,9 @@ This my reads app is one of my Udacity nano degrees course project. The app allo
 ### `Getting it up and running.`
 
 you probably already installed npm and yarn in your PC<br />
-below npm library is required to run the app:
-1:npm install --save react-router-dom
-2:npm install --save prop-types 
-3:npm install --save react-router-dom
-4:run npm start
+below npm library is required to run the app:<br />
+1:npm install --save react-router-dom<br />
+2:npm install --save prop-types <br />
+3:npm install --save react-router-dom<br />
+4:run npm start<br />
 
