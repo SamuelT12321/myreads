@@ -10,6 +10,16 @@ class SearchBooks extends React.Component {
    	showSearchScreen: false,
   }
 
+searchBookShelfChangerHandler = (book, shelf) =>{
+  //this function allowing user to change books 
+  //call this.updateBookShelf
+  this.props.updateBookShelf(book,shelf);
+  
+  //set state add shelf to searchResultBooks list
+  this.setState((currentState) => ({
+      searchResultBooks : this.manageBookStateHandler(currentState.searchResultBooks,this.props.myBooks)
+  }))
+}
 searchBook=(query)=>{
    console.log("searchBook : "  + query);
    if (query!== '' && query.trim().length > 0 ){
@@ -82,7 +92,7 @@ isEmpty= (obj)=> {
               (
                <ol className="books-grid">
                    {this.state.searchResultBooks? this.state.searchResultBooks.map((searchResultBook) =>(
-                      <Book key={searchResultBook.id} book={searchResultBook} bookShelfNameObject={bookShelfNameObject} updateBookShelf={updateBookShelf}/> 
+                      <Book key={searchResultBook.id} book={searchResultBook} bookShelfNameObject={bookShelfNameObject} updateBookShelf={this.searchBookShelfChangerHandler}/> 
                     )) : ''}
                 </ol>
 			   ):
